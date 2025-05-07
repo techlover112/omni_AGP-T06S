@@ -52,8 +52,6 @@ deploy:
   file: $HOME/twrp/*.img
   on:
     tags: false
-    repo: techlover112/AGP-T06S # Optional: If you want to deploy on different repository
-    branch: master # Optional: Needs to be exact as the config branch
 branches:
   only:
     - master # Set travis builder branch(es) names
