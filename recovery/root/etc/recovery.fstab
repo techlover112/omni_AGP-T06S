@@ -1,0 +1,25 @@
+/system                       ext4        /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system        /dev/block/mmcblk0p20     flags=display="System";backup=1;canbewiped;wipeingui
+/cache                        ext4        /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache         /dev/block/mmcblk0p21     flags=display="Cache";canbewiped;wipeingui;wipeduringfactoryreset
+/vendor                       ext4        /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/vendor
+/data                         ext4        /dev/block/dm-0                                                     /dev/block/mmcblk0p22     flags=length=-16384;display="Data";backup=1;canbewiped;wipeingui;wipeduringfactoryreset;settingsstorage
+/                             rootfs      rootfs
+/proc                         proc        proc
+/sys                          sysfs       sysfs
+/sys/fs/selinux               selinuxfs   selinuxfs
+/sys/kernel/debug             debugfs     debugfs
+/sys/kernel/debug/tracing     tracefs     tracefs
+/sys/fs/pstore                pstore      pstore
+/dev                          tmpfs       tmpfs
+/dev/pts                      devpts      devpts
+/dev/usb-ffs/adb              functionfs  adb
+/vendor/protect_f             ext4        /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect1
+/vendor/protect_s             ext4        /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect2
+/vendor/nvdata                ext4        /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata
+/mnt                          tmpfs       tmpfs
+/mnt/runtime/default/emulated sdcardfs    /data/media
+/mnt/runtime/read/emulated    sdcardfs    /data/media
+/mnt/runtime/write/emulated   sdcardfs    /data/media
+/sbin                         tmpfs       magisk
+/storage                      tmpfs       tmpfs
+/storage/emulated             sdcardfs    /data/media
+/storage/self                 tmpfs       tmpfs
